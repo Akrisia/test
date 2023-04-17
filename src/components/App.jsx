@@ -13,8 +13,8 @@ export default function App() {
         <Navigation />
         <Suspense fallback={<Loader />}>
           <Routes>
-            <Route path='/' end element={<HomeView />}/>
-            <Route path='/tweets' element={<TweetsView />}/>
+            <Route path='/test' end element={<HomeView />}/>
+            <Route path='/test/tweets' element={<TweetsView />}/>
           </Routes>
         </Suspense>
       </div>
