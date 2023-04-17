@@ -1,0 +1,41 @@
+.tweets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+    .tweets {
+        width: 480px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tweets {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .tweets {
+        width: 1200px;
+    }
+}
+
+.link {
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--secondary-color);
+    
+}
+
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}

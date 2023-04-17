@@ -1,0 +1,22 @@
+.list {
+    display: flex;
+    padding: 30px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.link {
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--font-color);
+    margin-left: 20px;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}
+
+.active {
+    composes: link;
+    color: var(--accent-color);
+}
