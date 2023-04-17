@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktest=self.webpackChunktest||[]).push([[699],{699:function(e,t,s){s.r(t),s.d(t,{default:function(){return u}});var n={home:"HomeView_home__V1n1b",title:"HomeView_title__A7wkU"},i=s(184);function u(){return(0,i.jsx)("div",{className:n.home,children:(0,i.jsx)("h1",{className:n.title,children:"Happy to see you here"})})}}}]);
+//# sourceMappingURL=699.1856bdcd.chunk.js.map
