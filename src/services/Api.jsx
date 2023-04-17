@@ -4,7 +4,7 @@ export const http = {
     get(url) {
         return axios.get(url);
     },
-    post(url, body) {
-        return axios.post(url, body);
+    put(url, body) {
+        return axios.put(url, body);
     }
 };
