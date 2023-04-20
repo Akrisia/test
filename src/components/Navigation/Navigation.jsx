@@ -6,8 +6,8 @@ const className = ({ isActive }) => (isActive ? s.active : s.link);
 export default function Navigation() {
     return (
         <nav className={s.list}>
-            <NavLink to='/test' end className={className}>Home</NavLink>
-            <NavLink to='/test/tweets' className={className}>Tweets</NavLink>
+            <NavLink to='/' end className={className}>Home</NavLink>
+            <NavLink to='/tweets' className={className}>Tweets</NavLink>
         </nav>
     )
 };
