@@ -25,7 +25,7 @@ export default function TweetsView() {
 
   return (
     <>
-      <Link to="/test" className={s.link}>Back</Link>    
+      <Link to="/" className={s.link}>Back</Link>    
       <div className={s.tweets}>
         <UserList page={page} handleUsers={handleUsers}/>
         {loading && <Loader/>}
