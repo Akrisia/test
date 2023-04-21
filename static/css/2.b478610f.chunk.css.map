@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/2.b478610f.chunk.css","mappings":"AAAA,uBACI,4BAA6B,CAC7B,cAAe,CAEf,eAAgB,CADhB,iBAEJ","sources":["views/NotFound/NotFound.module.css"],"sourcesContent":[".title {\n    color: var(--secondary-color);\n    font-size: 30px;\n    text-align: center;\n    margin-top: 40px;\n}"],"names":[],"sourceRoot":""}
