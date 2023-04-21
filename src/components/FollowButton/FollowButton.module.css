@@ -23,5 +23,5 @@
 
 .followButton:hover,
 .followButton:focus {
-    background-color: var(--accent-color);
+    transform: scale(1.06);
 }

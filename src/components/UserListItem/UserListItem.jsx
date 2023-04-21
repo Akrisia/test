@@ -10,18 +10,20 @@ export default function UserListItem({ id, name, tweets, followers, avatar }) {
     const handleFollowersChange = (newCount) => {
         setFollowersCount(newCount);
     }
+    const formatLabel = (number, singularLabel, pluralLabel) => {
+        return number === 1 ? `${number} ${singularLabel}` : `${number.toLocaleString()} ${pluralLabel}`;
+    }
     return (
         <li className={s.item}>
-            <img className={s.logo} src={logo} alt='logo'/>
-            <img className={s.picture} src={picture} alt='abstract figures'/>
+            <img className={s.logo} src={logo} alt='logo' width="76" height="22" />
+            <img className={s.picture} src={picture} alt='abstract figures' width="308" height="168" />
             <div className={s.divider}>
-                <div className={s.stripe}></div>
-                <img className={s.avatar} src={avatar} alt={name}/>
+                <img className={s.avatar} src={avatar} alt={name} width="62" height="62" />
             </div>
             <div className={s.text}>
                 <span style={{fontWeight: 700, color: 'var(--accent-color)'}}>{name}</span>
-                <span>{tweets === 1 ? tweets + ' tweet' : tweets.toLocaleString() + ' tweets'}</span>
-                <span>{followersCount === 1 ? followersCount + ' follower' : followersCount.toLocaleString() + ' followers'}</span>
+                <span>{formatLabel(tweets, 'tweet', 'tweets')}</span>
+                <span>{formatLabel(followersCount, 'follower', 'followers')}</span>
             </div>
             <FollowButton id={id} followers={followersCount} onFollowersChange={handleFollowersChange} />
         </li>

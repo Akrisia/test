@@ -6,6 +6,7 @@ import s from './App.module.css';
 
 const HomeView = lazy(() => import('../views/HomeView'));
 const TweetsView = lazy(() => import('../views/TweetsView'));
+const NotFound = lazy(() => import('../views/NotFound'));
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Routes>
             <Route path='/' end element={<HomeView />}/>
             <Route path='/tweets' element={<TweetsView />}/>
+            <Route path='*' element={<NotFound />}/>
           </Routes>
         </Suspense>
       </div>
